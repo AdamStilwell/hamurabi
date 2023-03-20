@@ -53,9 +53,9 @@ public class Hammurabi {
         System.out.println(setUpThings());
         while(isPlayable) {
             sb.setLength(0);
-            currentStats = "\n\nToday marks the beginning of year " + currentYear + " of your ten year rule of Babylon. Currently you have: " + currentPop + " citizens." +
-                    "\n"+ currentGrain + " grain left in storage. \nWe own "+ currentAcres + " acres of grain fields, valued at " + currentAcreValue + " bushels of grains per acre." +
-                    "\nIn the previous year, " + starvationDeaths + " citizens starved.\n" + citizensArrived +" citizens immigrated to the city.";
+            currentStats = "\n\nToday marks the beginning of year " + currentYear + " of your ten year rule of Babylon.\n\nCurrently we have " + currentPop + " citizens and "
+                    + currentGrain + " bushels of grain left in storage. \nWe own "+ currentAcres + " acres of grain fields, valued at " + currentAcreValue + " bushels of grains per acre." +
+                    "\nIn the previous year, " + starvationDeaths + " citizens starved and " + citizensArrived +" citizens immigrated to the city.";
             sb.append(currentStats);
             System.out.println(currentStats);
             getPlayerInput();
